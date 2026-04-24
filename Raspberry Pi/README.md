@@ -39,7 +39,9 @@ Install the required libraries using pip:
 1. Manual PS4 Control (ps4_motor_control.py)
 Ensure the PS4 controller is paired to the Raspberry Pi. The script maps the left and right vertical joystick axes to independent tank-drive motor speeds.
 
-- python3 ps4_motor_control.py
+    ```bash
+        python3 ps4_motor_control.py
+    '''
 
 Left Stick (Vertical): Controls Motor 1 (Forward/Backward)
 
@@ -66,18 +68,21 @@ Unlock: Once the FPGA reports a successful arrival (0xBB), the unlock button bec
 The robot_gui.py script communicates with the Nexys A7 FPGA using a strict 404-byte UART packet operating at 115200 baud. The FPGA automatically triggers the A* search on the rising edge of the final received map byte.
 
 Transmitted Packet (Raspberry Pi -> FPGA)
-
+''' 
 Byte Index          Description             Value Range
 0                   Start Row               0 - 19
 1                   Start Column            0 - 19
 2                   Goal Row                0 - 19
 3                   Goal Column             0 - 19
 4 to 403            Obstacle Map (Row)      0x00 (Free), 0x01 (Obstacle)
+'''
 
 Status Replies (FPGA -> Raspberry Pi)
 The GUI runs a background thread that polls for 1-byte status updates from the FPGA:
 
+'''
 Byte Received           Meaning             System Action
 0xAA                    Path Found          Updates the GUI status; motors engage.
 0xFF                    No Path Exists      Prompts the user to replan the goal.
 0xBB                    Arrived at Target   Navigation completes; enables the delivery lock release.
+'''
