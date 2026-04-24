@@ -33,7 +33,7 @@ Before executing the scripts, ensure the Raspberry Pi's hardware UART is enabled
 
 ## Python Dependencies
 Install the required libraries using pip:
-   '''
+   '''bash
    pip install pygame pyserial pillow numpy
 
 ## Instructions
@@ -52,7 +52,8 @@ PS Button: Exits the script and safely halts the motors.
 2. Autonomous Navigation GUI (robot_gui.py)
 Run the GUI within the Raspberry Pi desktop environment.
 
-- python3 robot_gui.py
+   ''''bash
+   python3 robot_gui.py
 
 ## GUI Workflow:
 
