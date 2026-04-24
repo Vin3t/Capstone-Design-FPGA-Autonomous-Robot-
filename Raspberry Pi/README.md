@@ -34,7 +34,7 @@ Before executing the scripts, ensure the Raspberry Pi's hardware UART is enabled
 ## Python Dependencies
 Install the required libraries using pip:
    '''bash
-   pip install pygame pyserial pillow numpy
+      pip install pygame pyserial pillow numpy
 
 ## Instructions
 1. Manual PS4 Control (ps4_motor_control.py)
@@ -52,7 +52,7 @@ PS Button: Exits the script and safely halts the motors.
 2. Autonomous Navigation GUI (robot_gui.py)
 Run the GUI within the Raspberry Pi desktop environment.
 
-   ''''bash
+   '''bash
    python3 robot_gui.py
 
 ## GUI Workflow:
