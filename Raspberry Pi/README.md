@@ -33,7 +33,8 @@ Before executing the scripts, ensure the Raspberry Pi's hardware UART is enabled
 
 ## Python Dependencies
 Install the required libraries using pip:
-- pip install pygame pyserial pillow numpy
+   '''
+   pip install pygame pyserial pillow numpy
 
 ## Instructions
 1. Manual PS4 Control (ps4_motor_control.py)
