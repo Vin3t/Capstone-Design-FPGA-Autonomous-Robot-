@@ -41,7 +41,6 @@ Ensure the PS4 controller is paired to the Raspberry Pi. The script maps the lef
 
     ```bash
         python3 ps4_motor_control.py
-    '''
 
 Left Stick (Vertical): Controls Motor 1 (Forward/Backward)
 
