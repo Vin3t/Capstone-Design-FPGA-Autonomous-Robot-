@@ -85,3 +85,4 @@ finally:
 	ser.close()
 	pygame.quit()
 	print("EXIT")
+	
