@@ -52,7 +52,7 @@ PS Button: Exits the script and safely halts the motors.
 2. Autonomous Navigation GUI (robot_gui.py)
 Run the GUI within the Raspberry Pi desktop environment.
 
-   '''bash
+'''bash
    python3 robot_gui.py
 
 ## GUI Workflow:
